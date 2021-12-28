@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import PropTypes from "prop-types";
+
 
 export class NewsItem extends Component {
   render() {
@@ -14,7 +14,7 @@ export class NewsItem extends Component {
             <p className="card-text">
              {description}...
             </p>
-            <a href={newsUrl} target="_blank" className="btn btn-sm btn-primary">
+            <a rel="noreferrer" href={newsUrl} target="_blank" className="btn btn-sm btn-dark">
               Read More
             </a>
            
