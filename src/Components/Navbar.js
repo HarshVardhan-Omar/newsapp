@@ -1,11 +1,21 @@
 import React, { Component } from "react";
 import {Link} from 'react-router-dom';
+import PropTypes from "prop-types";
 
 export class Navbar extends Component {
+
+  static defaultProps = {
+    backgroundColor: "primary"
+  };
+  static propTypes = {
+    backgroundColor: PropTypes.string
+  };
   render() {
+   
+   
     return (
       <div>
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav className={`navbar navbar-expand-lg navbar-dark bg-${this.props.backgroundColor}`} >
           <div className="container-fluid">
             <Link className="navbar-brand" to="/">
               NewsMonkey
