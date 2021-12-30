@@ -15,14 +15,14 @@ function App() {
     { <Routes>
        
      
-       {<Route  path="/" element={<Navbar key="general"  backgroundColor="primary" />}/> }
-       {<Route  path="/business" element={<Navbar key="business" backgroundColor="secondary" />}/> }
-       {<Route  path="/entertainment" element={<Navbar key="entertainment"  backgroundColor="success" />}/> }
-       {<Route  path="/general" element={<Navbar key="general"  backgroundColor="dark" />}/> }
-       {<Route  path="/health" element={<Navbar key="health"  backgroundColor="primary" />}/> }
-       {<Route  path="/science" element={<Navbar key="science"  backgroundColor="danger" />}/> }
-       {<Route  path="/sports" element={<Navbar key="sports"  backgroundColor="info" />}/> }
-       {<Route  path="/technology" element={<Navbar key="technology"  backgroundColor="warning" />}/> }
+       {<Route exact  path="/" element={<Navbar key="general"  backgroundColor="primary" />}/> }
+       {<Route exact  path="/business" element={<Navbar key="business" backgroundColor="secondary" />}/> }
+       {<Route exact  path="/entertainment" element={<Navbar key="entertainment"  backgroundColor="success" />}/> }
+       {<Route exact  path="/general" element={<Navbar key="general"  backgroundColor="dark" />}/> }
+       {<Route exact  path="/health" element={<Navbar key="health"  backgroundColor="primary" />}/> }
+       {<Route exact  path="/science" element={<Navbar key="science"  backgroundColor="danger" />}/> }
+       {<Route exact  path="/sports" element={<Navbar key="sports"  backgroundColor="info" />}/> }
+       {<Route exact  path="/technology" element={<Navbar key="technology"  backgroundColor="warning" />}/> }
       
      
      </Routes> }
